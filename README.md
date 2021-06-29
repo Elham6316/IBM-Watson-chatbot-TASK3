@@ -1,21 +1,35 @@
-## ROBOT FIGHT CONTROL PANEL :
+## ROBOT ARM CONTROL PANEL :
+first interface :
+to choose between (motor angle , Robot direction )
+#### Files :
+* 1.index.html
+* 2.ta2.php
+* 3.style3.css
+* 4.back2.png 
+### PIC :
+![] 
 
-Add Chatbot IBM Watson TO Previous TASK2  >   [here](https://github.com/Elham6316/User-experience-testing-and-improvement-for-robot-control-system-TASK2)
-### Chatbot :
-
-
-
-https://user-images.githubusercontent.com/85634015/123837866-01efd400-d914-11eb-9430-5d42f0ac0b22.mov
-
-
-### about :
-we have 
-* Intents (11)
-* Dialog (8) 
-
-<img width="309" alt="2021-06-29 (3)" src="https://user-images.githubusercontent.com/85634015/123841215-f4d4e400-d917-11eb-8fb6-15d0d4f0418e.png">
+### Robot direction interface :
+We have 5 buttons for direction (right,left,forward,backward,stop)
+connection to database when click right button > print "your choose direction = TO RIGHT "  
 
 #### Files : 
-* [code.task2](https://github.com/Elham6316/User-experience-testing-and-improvement-for-robot-control-system-TASK2)
-* [skill-talk.json](https://github.com/Elham6316/IBM_Watson_Chatbot---TASK3/blob/main/skill-talk.json)
+* 1.index2.html
+* 2.style.css
+* 3.select.php
+* 4.blue.jpg
+* 5.green.jpg
+* 6.orange.png
+* 7.pink.jpg
+* 8.purple.jpg
+
+### Motor angle interface :
+
+SUPPORT MOBILE WEB VIEW 
+
+![]()
+
+### Database PIC 
+
+
 

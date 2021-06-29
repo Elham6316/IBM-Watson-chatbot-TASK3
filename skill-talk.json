@@ -1,0 +1,515 @@
+{
+  "intents": [
+    {
+      "intent": "ai",
+      "examples": [
+        {
+          "text": "ai"
+        },
+        {
+          "text": "rose"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "angle",
+      "examples": [
+        {
+          "text": "angle"
+        },
+        {
+          "text": "motor angle"
+        },
+        {
+          "text": "robot angle"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "customer",
+      "examples": [
+        {
+          "text": "contact"
+        },
+        {
+          "text": "customer service"
+        },
+        {
+          "text": "phone number"
+        },
+        {
+          "text": "WhatsApp"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "dir",
+      "examples": [
+        {
+          "text": "direction"
+        },
+        {
+          "text": "How can I make the robot move forward ?"
+        },
+        {
+          "text": "robot direction"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "e_pe",
+      "examples": [
+        {
+          "text": "e_pe"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "industrial",
+      "examples": [
+        {
+          "text": "indie"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "iot",
+      "examples": [
+        {
+          "text": "iot"
+        },
+        {
+          "text": "welcome"
+        }
+      ],
+      "description": "Field of work: Programming with PHP and Java - MySQL Databases - Using Fire IBM Watson - Using Flutter - Base"
+    },
+    {
+      "intent": "ME",
+      "examples": [
+        {
+          "text": "me"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "register",
+      "examples": [
+        {
+          "text": "register"
+        },
+        {
+          "text": "register for summer training"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "thanx",
+      "examples": [
+        {
+          "text": "ok"
+        },
+        {
+          "text": "ok thankyou"
+        },
+        {
+          "text": "thankyou"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "training_tracks",
+      "examples": [
+        {
+          "text": "summary"
+        },
+        {
+          "text": "summer"
+        },
+        {
+          "text": "summer training option"
+        },
+        {
+          "text": "tracks"
+        },
+        {
+          "text": "training"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1624979069841",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "iot",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The work: Programming with PHP and Java - MySQL Databases - Using Fire IBM Watson - Using Flutter ."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1624976586436",
+      "conditions": "#iot",
+      "dialog_node": "node_10_1624976515152"
+    },
+    {
+      "type": "standard",
+      "title": "me",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "3D - engineering and mechanical drawing - mechanical movement"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1624976586436",
+      "conditions": "#ME",
+      "dialog_node": "node_10_1624977026405",
+      "previous_sibling": "node_5_1624976667346"
+    },
+    {
+      "type": "standard",
+      "title": "inde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Engineering project management - industrial planning for production lines - engineering project analysis\nInnovative and complex - practical application to actual projects."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1624976586436",
+      "conditions": "#industrial",
+      "dialog_node": "node_10_1624977478699",
+      "previous_sibling": "node_5_1624977305021"
+    },
+    {
+      "type": "folder",
+      "title": "maininterface",
+      "conditions": "",
+      "dialog_node": "node_1_1624974288256",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "about",
+      "output": {
+        "generic": [
+          {
+            "title": "Choose :",
+            "options": [
+              {
+                "label": "Internet of Things applications - IOT",
+                "value": {
+                  "input": {
+                    "text": "iot"
+                  }
+                }
+              },
+              {
+                "label": "Artificial intelligence applications in robotics - AI",
+                "value": {
+                  "input": {
+                    "text": "ai"
+                  }
+                }
+              },
+              {
+                "label": "Mechanical engineering",
+                "value": {
+                  "input": {
+                    "text": "me"
+                  }
+                }
+              },
+              {
+                "label": "Electronics and Power Engineering",
+                "value": {
+                  "input": {
+                    "text": "e_pe"
+                  }
+                }
+              },
+              {
+                "label": "Industrial and systems engineering",
+                "value": {
+                  "input": {
+                    "text": "inde"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#training_tracks",
+      "dialog_node": "node_1_1624976035759",
+      "previous_sibling": "node_6_1624976586436"
+    },
+    {
+      "type": "standard",
+      "title": "register",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "To register, please visit our website : https://s-m.com.sa/index.html"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#register",
+      "dialog_node": "node_1_1624978813806",
+      "previous_sibling": "node_1_1624976035759"
+    },
+    {
+      "type": "standard",
+      "title": "angle",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "By pressing the \"MOTOR ANGLE\" button and choosing the angle for each motor."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1624974288256",
+      "conditions": "#angle",
+      "dialog_node": "node_5_1624973893995"
+    },
+    {
+      "type": "standard",
+      "title": "dir",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "By pressing the \"ROBOT DIRECTON\" button and choosing the desired direction."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1624974288256",
+      "conditions": "#dir",
+      "dialog_node": "node_5_1624974402306",
+      "previous_sibling": "node_5_1624973893995"
+    },
+    {
+      "type": "standard",
+      "title": "ai",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The work: Programming with Python - Dealing with the ROS Choll system - Programming with    - TensorFlow ."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1624976586436",
+      "conditions": "#ai",
+      "dialog_node": "node_5_1624976667346",
+      "previous_sibling": "node_10_1624976515152"
+    },
+    {
+      "type": "standard",
+      "title": "e_pe",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Programming  C - Programming  C Embedded - Writing algorithms and structuring data -\nDesign and installation of electronic rotors - geometry calculations"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1624976586436",
+      "conditions": "#e_pe",
+      "dialog_node": "node_5_1624977305021",
+      "previous_sibling": "node_10_1624977026405"
+    },
+    {
+      "type": "folder",
+      "title": "options",
+      "conditions": "",
+      "dialog_node": "node_6_1624976586436",
+      "previous_sibling": "node_9_1624974624723"
+    },
+    {
+      "type": "standard",
+      "title": "contact",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Customer Service 0580202718 OR info@s-m.com.sa "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#customer",
+      "dialog_node": "node_9_1624974624723",
+      "previous_sibling": "node_1_1624974288256"
+    },
+    {
+      "type": "standard",
+      "title": "thanx",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for contacting us, have a good day :) "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://s-m.com.sa/images/logo.png",
+            "response_type": "image"
+          }
+        ]
+      },
+      "conditions": "#thanx",
+      "dialog_node": "node_9_1624979069841",
+      "previous_sibling": "node_1_1624978813806"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome to ROBOT FIGHT CONTROL PANEL , How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://www.s-m.com.sa/images/logo.png",
+            "response_type": "image"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "talk",
+  "language": "en",
+  "description": ""
+}

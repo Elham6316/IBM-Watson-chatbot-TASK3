@@ -15,7 +15,6 @@ we have
 <img width="309" alt="2021-06-29 (3)" src="https://user-images.githubusercontent.com/85634015/123841215-f4d4e400-d917-11eb-8fb6-15d0d4f0418e.png">
 
 #### Files : 
-* [code.task2](https://github.com/Elham6316/User-experience-testing-and-improvement-for-robot-control-system-TASK2)
 * [skill-talk.json](https://github.com/Elham6316/IBM_Watson_Chatbot---TASK3/blob/main/skill-talk.json)
 
 ### INTERFACE LINK 
